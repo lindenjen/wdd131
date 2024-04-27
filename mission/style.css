@@ -1,0 +1,43 @@
+
+body {
+    font-size: 20px;
+    font-family: "Times New Roman", serif;
+    color: black;
+    line-height: 1.5;
+    text-align: center; 
+}
+
+
+h2 {
+    color: #006EB6;
+    font-size: 17px;
+}
+
+
+.title {
+    text-transform: uppercase; 
+    letter-spacing: 0.05em; 
+}
+
+
+.content {
+    max-width: 600px;
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+
+p {
+    text-align: left;
+}
+
+li {
+    text-align: left;
+}
+
+
+img.logo {
+    width: 150px; 
+    height: auto; 
+}
+
