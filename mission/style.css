@@ -3,14 +3,18 @@ body {
     font-size: 20px;
     font-family: "Times New Roman", serif;
     color: black;
+    background-color: #fff;
     line-height: 1.5;
     text-align: center; 
+    border: 2px solid black; 
+    margin: 5px;
 }
 
 
 h2 {
     color: #006EB6;
     font-size: 17px;
+    text-decoration: underline;
 }
 
 
@@ -41,3 +45,11 @@ img.logo {
     height: auto; 
 }
 
+.dark {
+    background-color: #333; 
+    color: white; 
+}
+
+.dark h2 {
+    color: #0094D6; 
+}
