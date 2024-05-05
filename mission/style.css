@@ -6,7 +6,7 @@ body {
     background-color: #fff;
     line-height: 1.5;
     text-align: center; 
-    border: 2px solid black; 
+    border: .5px solid black; 
     margin: 5px;
 }
 
@@ -56,3 +56,4 @@ img.logo {
     font-size: 17px;
     text-decoration: underline;
 }
+
