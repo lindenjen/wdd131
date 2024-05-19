@@ -3,7 +3,7 @@
 :root {
     --primary-color: #52489c;
     --secondary-color: #59c3c3;
-    --accent-color: #f45b69;
+    --accent-color: white;
     --text-dark: #333;
     --text-light: #ebebeb;
     --primary-font: Arial, Helvetica, sans-serif;
@@ -38,24 +38,23 @@ main {
     padding: 20px;
 }
 
-button#menu {
+/*button#menu {
     display: none; 
-}
+}*/
 
 .centered {
     text-align: center; 
 }
 
-nav ul {
-    display: flex;
-    justify-content: center; 
-    padding: 0;
-    list-style-type: none;
-}
+
+
+
 
 nav li {
     margin: 0 30px; 
 }
+
+
 
 .gallery {
     display: grid;
@@ -83,9 +82,52 @@ h2 {
     font-family: var(--secondary-font); 
 }
 
+.hide {
+	display: none;
+}
+
+#menu-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  
+}
+
+@media screen and (max-width: 700px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        display: block;
+        justify-content: center;
+        /*width: 60px;*/
+        padding: 0;
+        list-style-type: none;
+    }
+
+    button#menu-button {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 @media screen and (min-width: 700px) {
     .gallery {
         grid-template-columns: 1fr 1fr;
+    }
+
+    nav ul {
+        display: block;
+        justify-content: center;
+        /*width: 60px;*/
+        padding: 0;
+        list-style-type: none;
+    }
+
+    button#menu-button {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -95,7 +137,14 @@ h2 {
         grid-template-columns: 1fr 1fr 1fr; 
     }
     
-    button#menu {
+    nav ul {
+        display: flex;
+        justify-content: center; 
+        padding: 0;
+        list-style-type: none;
+    }
+
+    button#menu-button {
         display: none; 
     }
 }
