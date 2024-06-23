@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A collection of delicious recipes.">
+    <meta name="author" content="Linden Jensen">
+    <meta property="og:title" content="RecipeBook">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="A collection of delicious recipes.">
+    <meta property="og:image" content="images/recipe-book.png">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Delicious Recipes</title>
+    <link rel="stylesheet" href="recipes.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center;"><img src="images/recipe-book.png" alt="Recipe Book">
+        <h1>RecipeBook</h1></div>
+    </header>
+    <div class="search">
+        <form id="search-form">  
+            <input type="text" id="search-input" placeholder="Search for recipes...">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <hr />
+    <main>
+        
+        <section class="recipes">
+            <article class="recipe">
+                <img class="photo" src="images/escalopes-de-poulet-a-la-creme.webp" alt="Example Recipe">
+                <div>
+                    <div style="border: 1px solid black; display: inline-block; padding: 4px;">
+                        entree
+                    </div>
+                <h2>Escalope de Poulet a la Creme with steamed green beans (Chicken with Cream)</h2>
+                <div class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">☆</span>
+                </div>
+                <p class="description">Delicious quick and easy creamy rice dish. The mustard, mushrooms, and lemon all blend together wonderfully</p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img src="images/instagram_icon.svg" alt="Instagram icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="YouTube icon"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="Pinterest icon"></a>
+        </div>
+    </footer>
+</body>
+</html>

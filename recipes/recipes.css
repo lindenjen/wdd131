@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+
+:root {
+    --primary-color: #ffcbcb;
+    --secondary-color: #000;
+    --text-dark: #000;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: 'Amatic SC', cursive;
+}
+
+body {
+    font-family: var(--primary-font);
+    margin: 0;
+    padding: 0;
+    color: var(--text-dark);
+    background-color: var(--text-light);
+}
+
+header {
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    /*width: 90%;*/
+}
+
+header img {
+    height: 50px;
+    margin-right: 1rem;
+    /*align-items: center;*/
+    
+
+}
+
+header h1 {
+    font-family: var(--secondary-font);
+    font-size: 2.5rem;
+}
+
+.search {
+    display: flex;
+    flex: 1;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.search input {
+    flex: 1;
+ 
+}
+
+main {
+    padding: 1rem;
+}
+
+.description {
+    display: none;
+}
+
+.photo {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recipe {
+    justify-content: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.6em;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+.social {
+    margin-top: 1rem;
+}
+
+.social img {
+    width: 30px;
+    margin: 0 0.5rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating .icon-star,
+.rating .icon-star-empty {
+    font-size: 1.5rem;
+}
+
+@media (min-width: 600px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .description {
+        display: flex;
+    }
+    
+    .photo {
+        width: 100%;
+        
+    }
+
+    .recipe {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        grid-gap: 25px;
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+    
+}
+
+@media (min-width: 960px) {
+    body {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+}
+
