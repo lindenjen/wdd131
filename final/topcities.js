@@ -1,6 +1,6 @@
 
 function getWeatherForCity(city, cityId) {
-    const apiUrl = `http://api.weatherapi.com/v1/current.json?key=a52499ff54b643158ec24459241607&q=${city}`;
+    const apiUrl = `https://api.weatherapi.com/v1/current.json?key=a52499ff54b643158ec24459241607&q=${city}`;
    // const outputElement = document.getElementById('output');
     //const cityName = document.getElementById('cityName');
     const cityCondition = document.getElementById(`${cityId}-weather`);

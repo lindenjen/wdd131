@@ -1,6 +1,6 @@
 
 function getWeather(zipCode) {
-    const apiUrl = `http://api.weatherapi.com/v1/current.json?key=a52499ff54b643158ec24459241607&q=${zipCode}`;
+    const apiUrl = `https://api.weatherapi.com/v1/current.json?key=a52499ff54b643158ec24459241607&q=${zipCode}`;
    // const outputElement = document.getElementById('output');
     const cityName = document.getElementById('cityName');
     const condition = document.getElementById('condition');
