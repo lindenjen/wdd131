@@ -10,14 +10,14 @@
     <meta property="og:description" content="A Weather App that shows the current weather.">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
-    <script src="weatherapp.js" defer></script>
+    <script src="weatherapp.js" type="module"></script>
     <link rel="icon" type="images/png" sizes="32x32" href="./favicon.png">
 </head>
 <body>
     <header>
         <div class="logotext">
         <img height = "50px" src="logo.png" alt="Weather Logo" style="padding-right: 20px;">
-        <h1>Weather Forecast</h1>
+        <h1>Pretty Weather</h1>
         </div>
     </header>
     <main id="main">
@@ -28,11 +28,11 @@
         </div>
         <form id="weatherForm">
             <input type="text" id="cityInput" placeholder="Enter a city" required>
-            <button type="submit" onClick="lookupweather(); return false;">Get Forecast</button>
+            <button id="lookupButton" type="submit">Get Weather</button>
         </form>
     </main>
     <footer>
-        <a href="topcities.html">See Top Cities Current Weather</a>
+        <a href="topcities.html">Click For Top Cities Current Weather</a>
     </footer>
 </body>
 </html>

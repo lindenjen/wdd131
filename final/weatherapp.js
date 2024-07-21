@@ -1,4 +1,5 @@
 
+import { getWeatherData } from "./weather.js";
 function getWeather(zipCode) {
     const apiUrl = `https://api.weatherapi.com/v1/current.json?key=a52499ff54b643158ec24459241607&q=${zipCode}`;
    // const outputElement = document.getElementById('output');
@@ -30,18 +31,25 @@ function getWeather(zipCode) {
     });
 }
 
-function lookupweather() {
-   
+
+function lookupweather(event) {
+    
+    event.preventDefault();
     var city = document.getElementById('cityInput').value;
     if (city == "") {
         alert("Please enter a city");
     } else {
-        var data = getWeather(city);
-        
+        getWeatherData(city, returnWeather);
     }
-    
-    
+}
 
+function returnWeather(data) {
+    const cityName = document.getElementById('cityName');
+    const condition = document.getElementById('condition');
+    cityName.innerHTML = `${data.location.name}, ${data.location.region}`;
+    condition.textContent = `${data.current.condition.text} ${data.current.temp_f}°F`;
+    
+    setBackground(data.current.condition.text, data.current.is_day);
 }
 
 function setBackground(condition, isDay) {
@@ -84,4 +92,5 @@ function simpifyCondition(condition) {
     return "unknown";
 } 
 
-//getWeather('83440');
+document.querySelector('#lookupButton').addEventListener('click', lookupweather);
+
