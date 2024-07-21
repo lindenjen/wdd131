@@ -31,10 +31,20 @@ function getWeatherForCity(city, cityId) {
 }
 
 function loadWeather() {
-    getWeatherForCity('London', 'london');
-    getWeatherForCity('Dubai', 'dubai');
-    getWeatherForCity('New York', 'ny');
-    getWeatherForCity('Tokyo', 'tokyo');
+    let myArray = [
+        ['London', 'london'], 
+        ['Dubai', 'dubai'],
+        ['New York', 'ny'],
+        ['Tokyo', 'tokyo']
+        ];
+
+    for (let i = 0; i < myArray.length; i++) {
+        getWeatherForCity(myArray[i][0], myArray[i][1]);
+    }
+    //getWeatherForCity('London', 'london');
+    //getWeatherForCity('Dubai', 'dubai');
+    //getWeatherForCity('New York', 'ny');
+    //getWeatherForCity('Tokyo', 'tokyo');
 }
 
 loadWeather();
